@@ -18,7 +18,7 @@
         <div class="headtitles" id="headtitlesfix">
             <div class="one">
                 <ul>
-                    <li><a href="User?page=home"><img src="CSS/images/LMB.png" id="logo"></a></li>
+                    <li><a href="User?page=home"><img src="${pageContext.request.contextPath}/CSS/images/tutum.svg" id="logo"></a></li>
                 </ul>
             </div>
             <div class="two">
@@ -68,7 +68,7 @@
                 <span>You can manage your account from here.</span>
                 <p>Your email is <%= session.getAttribute("email") %></p>
                 <p>Your user ID is <%= session.getAttribute("uid") %></p>
-                <img src="../CSS/images/cars.png" id="greetbg">
+<%--                <img src="../CSS/images/cars.png" id="greetbg">--%>
             </div>
         </div>
     </section>

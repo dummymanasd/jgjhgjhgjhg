@@ -374,29 +374,28 @@
                 <div class="fields">
                     <div class="input-field">
                         <label>Full Name</label>
-                        <input type="text" placeholder="Enter your name" name="uname" value="Sandip" required>
+                        <input type="text" placeholder="Enter your name" name="uname"  required>
                     </div>
 
                     <div class="input-field">
                         <label>Date of Birth</label>
-                        <input type="date" placeholder="Enter birth date" name="dob" value="2022" required>
+                        <input type="date" placeholder="Enter birth date" name="dob"  required>
                     </div>
 
                     <div class="input-field">
                         <label>Email</label>
-                        <input type="text" placeholder="Enter your email" name="uemail" value="sandip@123gmail.com"
+                        <input type="text" placeholder="Enter your email" name="uemail"
                                required>
                     </div>
 
                     <div class="input-field">
                         <label>Mobile Number</label>
-                        <input type="number" placeholder="Enter mobile number" name="mobilenumber" value="98744444444"
-                               required>
+                        <input type="number" placeholder="Enter mobile number" name="mobilenumber" required>
                     </div>
 
                     <div class="input-field">
                         <label>Gender</label>
-                        <select name="gender" value="Male" required>
+                        <select name="gender"  required>
                             <option>Select gender</option>
                             <option>Male</option>
                             <option>Female</option>
@@ -406,7 +405,7 @@
 
                     <div class="input-field">
                         <label>Occupation</label>
-                        <input type="text" placeholder="Enter your occupation" name="occupation" value="Student" required>
+                        <input type="text" placeholder="Enter your occupation" name="occupation"  required>
                     </div>
                 </div>
             </div>
@@ -417,32 +416,32 @@
                 <div class="fields">
                     <div class="input-field">
                         <label>ID Type</label>
-                        <input type="text" placeholder="Enter ID type" name="ID" value="College" required>
+                        <input type="text" placeholder="Enter ID type" name="ID"  required>
                     </div>
 
                     <div class="input-field">
                         <label>ID Number</label>
-                        <input type="number" placeholder="Enter ID number" name="IDno" value="123456" required>
+                        <input type="number" placeholder="Enter ID number" name="IDno"  required>
                     </div>
 
                     <div class="input-field">
                         <label>Issued Authority</label>
-                        <input type="text" placeholder="Enter issued authority" name="Auth" value="Virinchi" required>
+                        <input type="text" placeholder="Enter issued authority" name="Auth"  required>
                     </div>
 
                     <div class="input-field">
                         <label>Issued State</label>
-                        <input type="text" placeholder="Enter issued state" name="Istate" value="KTM" required>
+                        <input type="text" placeholder="Enter issued state" name="Istate"  required>
                     </div>
 
                     <div class="input-field">
                         <label>Name on Card</label>
-                        <input type="text" placeholder="Enter your Id name " value="Sandip Rai" required>
+                        <input type="text" placeholder="Enter your Id name "  required>
                     </div>
 
                     <div class="input-field">
                         <label>Issued Date</label>
-                        <input type="date" placeholder="Enter your issued date" name="Idate" value="2021" required>
+                        <input type="date" placeholder="Enter your issued date" name="Idate"  required>
                     </div>
                 </div>
 
@@ -465,18 +464,17 @@
                 <div class="fields">
                     <div class="input-field">
                         <label>Plate Number</label>
-                        <input type="text" placeholder="Ba 16 ****" name="Pno" value="gadi" required>
+                        <input type="text" placeholder="Ba 16 ****" name="Pno"  required>
                     </div>
 
                     <div class="input-field">
                         <label>Manufacturer</label>
-                        <input type="text" placeholder="Enter the name of manufaturer" name="Man" value="Tvs" required>
+                        <input type="text" placeholder="Enter the name of manufaturer" name="Man"  required>
                     </div>
 
                     <div class="input-field">
                         <label>Estimated value</label>
-                        <input type="text" placeholder="Enter the price of Vehicle" name="Evalue" value="1222222"
-                               required>
+                        <input type="text" placeholder="Enter the price of Vehicle" name="Evalue" required>
                     </div>
 
 
@@ -490,7 +488,7 @@
 
                     <div class="input-field">
                         <label>Motor dmg</label>
-                        <select name="Mdmg" value="Motor" required>
+                        <select name="Mdmg"  required>
                             <option>Select one</option>
                             <option>Motor</option>
                             <option>Wheels</option>
@@ -501,8 +499,8 @@
 
                     <div class="input-field">
                         <label>Plan</label>
-                        <select name="Plan" value="All Risk" required>
-                            <%-- <option disabled selected>Select your plan</option>--%>
+                        <select name="Plan"  required>
+                            <option disabled selected>Select your plan</option>
                             <option>Select your plan</option>
                             <option>Obligatory</option>
                             <option>All Risk</option>
@@ -513,7 +511,7 @@
 
                     <div class="input-field">
                         <label>Validity Period</label>
-                        <select name="Vperiod" value="1" required>
+                        <select name="Vperiod" required>
                             <option>Select years</option>
                             <option>1 year</option>
                             <option>2 years</option>
@@ -549,7 +547,7 @@
 <!--    Javascript for buttons-->
 <script>
 
-<%--    <% --To set the start date and last date-- %>--%>
+    <%--    <% --To set the start date and last date-- %>--%>
     function setPolicyDates() {
         var startDate = new Date();
         var endDate = new Date(startDate);

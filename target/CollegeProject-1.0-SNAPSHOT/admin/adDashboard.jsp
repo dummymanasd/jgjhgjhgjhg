@@ -27,7 +27,7 @@
         <div class="headtitles" id="headtitlesfix">
             <div class="one">
                 <ul>
-                    <li><a href="admin?action=home"><img src="CSS/images/LMB.png"
+                    <li><a href="admin?action=home"><img src="${pageContext.request.contextPath}/CSS/images/tutum.svg""
                                                          id="logo"></a></li>
                 </ul>
             </div>
