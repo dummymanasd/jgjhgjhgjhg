@@ -141,7 +141,7 @@
 
         </div>
         <div class="image-section">
-            <img src="\CSS\images">
+            <img src="${pageContext.request.contextPath}/CSS/images/img one.png">
         </div>
     </div>
 </div>

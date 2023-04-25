@@ -35,7 +35,7 @@ public class AdminController extends HttpServlet {
         if (action.equalsIgnoreCase("login") ){
 
             String email = request.getParameter("email");
-            String password = request.getParameter("password");
+            String password = HashPassword.hashPassword(request.getParameter("password"));
             System.out.println(email + " " + password + " ");
 
             Student student = new AdminService().getUser(email, password);

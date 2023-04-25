@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <title>${details.btitle} | Library Management System</title>
-    <link rel="shortcut icon" type="image/jpg" href="..CSS/images/LM.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="..CSS/images/tutum.svg"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/styles.css">
     <script src="https://kit.fontawesome.com/6f3a65e23d.js" crossorigin="anonymous"></script>
 </head>
@@ -18,21 +18,21 @@
         <div class="headtitles" id="headtitlesfix">
             <div class="one">
                 <ul>
-                    <li><a href="user?page=home"><img src="${pageContext.request.contextPath}/CSS/images/LMB.png"
+                    <li><a href="admin?action=home"><img src="${pageContext.request.contextPath}/CSS/images/tutum.svg"
                                                       id="logo"></a></li>
                 </ul>
             </div>
             <div class="two">
                 <ul>
                     <li>
-                        <form action="admin?action=search" method="post">
+                        <form action="action?page=search" method="post">
                             <input type="search" name="query" id="search" placeholder="Search...">
                             <button type="submit" class="search_button"><i class="fas fa-search"></i></button>
                         </form>
                     </li>
 
 
-                    <li><a href="" id="profileprofile" class="headlink">My Profile</a></li>
+                    <li><a href="admin?action=logout" id="profileprofile" class="headlink">Logout</a></li>
 
 
                 </ul>
@@ -66,80 +66,10 @@
                     <div class="User-profile-heading">View</div>
 
                     <div class="book-info-form">
-
-<%--                        <div class="book-details">--%>
-<%--                            <div class="label inputsection inputsection-sub">--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <label>First Name:</label>--%>
-<%--                                </div>--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <label></label>--%>
-<%--                                </div>--%>
-<%--                                <br>--%>
-<%--                            </div>--%>
-<%--                            <div class="displayfields inputsection inputsection-sub">--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <span>${details.name}</span>--%>
-<%--                                </div>--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <span>a</span>--%>
-<%--                                    &lt;%&ndash;        <p>${details.btitle}a</p>&ndash;%&gt;--%>
-<%--                                    &lt;%&ndash;        <p>${details.bauthor}a</p>&ndash;%&gt;--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                            <div class="label inputsection inputsection-sub">--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <label>Insurance Policy:</label>--%>
-<%--                                </div>--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <label>Address:</label>--%>
-<%--                                </div>--%>
-<%--                                <br>--%>
-<%--                            </div>--%>
-<%--                            <div class="displayfields inputsection inputsection-sub">--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <span>${details.policy}</span>--%>
-<%--                                </div>--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <span>${details.address}</span>--%>
-
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                            <div class="label inputsection inputsection-sub">--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <label>Email:</label>--%>
-<%--                                </div>--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <label>Phone:</label>--%>
-<%--                                </div>--%>
-<%--                                <br>--%>
-<%--                            </div>--%>
-<%--                            <div class="displayfields inputsection inputsection-sub">--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <span>${details.email}</span>--%>
-<%--                                </div>--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <span>${details.phone_number}</span>--%>
-
-<%--                                </div>--%>
-<%--                            </div>--%>
-
-<%--                            <div class="label inputsection inputsection-sub">--%>
-<%--                                <div class="compacth">--%>
-<%--                                    <label>Additonal information:</label>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                            <div class="displayfields inputsection inputsection-sub">--%>
-<%--                                <div>--%>
-<%--                                    <span>${details.info}</span>--%>
-
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
                         <div class="book-details">
                             <table class="seeclaim">
                                 <colgroup>
-                                    <col span="1" style="width: 25%;">
+                                    <col span="1" style="width: 30%;">
                                     <col span="1" style="width: 70%;">
 
                                 </colgroup>
@@ -155,7 +85,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <br>
+
                                 <tr>
                                     <th>
                                         <div class="compacth">
@@ -168,7 +98,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <br>
+
                                 <tr>
                                     <th>
                                         <div class="compacth">
@@ -182,7 +112,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <br>
+
                                 <tr>
                                     <th>
                                         <div class="compacth">
@@ -197,7 +127,7 @@
 
                                     </td>
                                 </tr>
-                                <br>
+
                                 <tr>
                                     <th>
                                         <div class="compacth">
@@ -211,7 +141,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <br>
+
                                 <tr>
                                     <th>
                                         <div class="compacth">
@@ -220,7 +150,7 @@
                                     </th>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td colspan="2">
                                         <div>
                                             <span>${details.info}</span>
 
@@ -237,8 +167,6 @@
                                      src="data:image/png;base64,${details.image}">
                             </div>
 
-
-
                         </div>
                     </div>
 
@@ -254,7 +182,7 @@
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
 </div>
 

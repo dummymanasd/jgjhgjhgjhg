@@ -13,11 +13,12 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #0e81a5;
         }
 
         .container {
             width: 50%;
-            margin: auto;
+            margin: 0 auto;
             padding: 20px;
             background-color: #f2f2f2;
             border-radius: 10px;
@@ -59,18 +60,40 @@
             background-color: #3e8e41;
         }
 
+        .return-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #e74c3c;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .return-button:hover {
+            background-color: #c0392b;
+        }
     </style>
 </head>
 <body>
-<h1>Change Password</h1>
-<form action="User?page=changingpassword" method="post">
-
-    <label for="oldpassword">Old Password:</label>
-    <input type="password" id="oldpassword" name="oldpassword"><br><br>
-    <label for="newpassword">New Password:</label>
-    <input type="password" id="newpassword" name="newpassword"><br><br>
-    <input type="submit" value="Change Password">
-</form>
+<div class="container">
+    <h1 style="text-align: center;">Change Password</h1>
+    <form action="User?page=changingpassword" method="post" style="text-align: center;">
+        <div>
+            <label for="oldpassword" class="form-label">Old Password:</label>
+            <input type="password" id="oldpassword" name="oldpassword" class="form-input"><br><br>
+            <label for="newpassword" class="form-label">New Password:</label>
+            <input type="password" id="newpassword" name="newpassword" class="form-input"><br><br>
+            <input type="submit" value="Change Password" class="form-button">
+        </div>
+    </form>
+    <form action="User?page=logout" method="post">
+        <button class="return-button">Return</button>
+    </form>
+</div>
 </body>
 </html>
-

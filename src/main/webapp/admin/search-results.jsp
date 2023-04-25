@@ -24,7 +24,7 @@
                 <ul>
 
 
-                    <li><a href="admin?action=home"><img src="CSS/images/LMB.png" id="logo"></a></li>
+                    <li><a href="admin?action=home"><img src="${pageContext.request.contextPath}/CSS/images/tutum.svg"" id="logo"></a></li>
                 </ul>
             </div>
             <div class="two">
