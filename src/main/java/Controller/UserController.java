@@ -1,10 +1,8 @@
 package Controller;
-
 import java.io.*;
 import java.net.URLEncoder;
 import java.sql.SQLException;
 import java.util.*;
-
 import Hashing.HashPassword;
 import Model.Student;
 import Service.AdminService;
@@ -417,7 +415,9 @@ public class UserController extends HttpServlet {
         if (action.equalsIgnoreCase("viewpremium")) {
             Student student = new Student();
 
-            List<Student> premiumlist = new UserService().getPremiumList();
+
+            int uid = (int) request.getSession().getAttribute("uid");
+            List<Student> premiumlist = new UserService().getPremiumList(uid);
             request.setAttribute("premiumlist", premiumlist);
             RequestDispatcher rd = request.getRequestDispatcher("user/viewpremium.jsp"); // this code is not working
             rd.forward(request, response);

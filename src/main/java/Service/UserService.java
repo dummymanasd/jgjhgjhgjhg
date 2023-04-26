@@ -2,9 +2,11 @@ package Service;
 
 import DBConnection.DBConnection;
 import Model.Student;
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import jakarta.servlet.http.Part;
 
 import java.io.*;
@@ -436,17 +438,19 @@ public class UserService {
         return details;
     }
 
-    public static List<Student> getPremiumList() {
+    public static List<Student> getPremiumList(int uid) {
         System.out.println("getPremiumList");
         List<Student> premiumlist1 = new ArrayList<>();
         String query = "SELECT premium.id, premium.Name, premium.PhoneNumber, premium.Evalue, premium.Premium, details.buydate, details.lastdate " +
                 "FROM premium " +
                 "JOIN details " +
-                "ON premium.uid = details.uid";
+                "ON premium.uid = details.uid " +
+                "WHERE premium.uid = ?";
 
         System.out.println(query);
         PreparedStatement pstm = new DBConnection().getStatement(query);
         try {
+            pstm.setInt(1, uid);
             ResultSet rs = pstm.executeQuery();
             while (rs.next()) {
                 Student student = new Student();

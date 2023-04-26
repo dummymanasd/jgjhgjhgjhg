@@ -4,6 +4,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.rmi.server.UID" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="en">
 

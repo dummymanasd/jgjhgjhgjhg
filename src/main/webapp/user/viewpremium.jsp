@@ -109,12 +109,11 @@
                             </tr>
                             </thead>
                             <tbody id="paginated-list" data-current-page="1" aria-live="polite">
-                            <% PrintWriter printt=response.getWriter();
-                                List<Student> premiumlist = new UserService().getPremiumList();
-
+                            <% List<Student> premiumlist = (List<Student>) request.getAttribute("premiumlist");
                                 int sn =1;
                                 for (Student student : premiumlist) {
                             %>
+
                             <tr>
                                 <td style="float:right; height: 24px;">
                                     <%=sn%>.
@@ -137,7 +136,7 @@
                                     <%=student.getBuydate()%>
                                 </td>
 
-<%--                                <!-- <td><a href="User?page=showimage&id=${student.id}">Show Image</a></td> -->--%>
+                                <%--                                <!-- <td><a href="User?page=showimage&id=${student.id}">Show Image</a></td> -->--%>
 
                                 <td style="text-align: center;">
                                     <%=student.getLastdate()%>

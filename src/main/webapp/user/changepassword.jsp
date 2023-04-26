@@ -91,7 +91,7 @@
             <input type="submit" value="Change Password" class="form-button">
         </div>
     </form>
-    <form action="User?page=logout" method="post">
+    <form action="User?page=home" method="post">
         <button class="return-button">Return</button>
     </form>
 </div>

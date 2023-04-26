@@ -75,7 +75,7 @@
         <div class="container">
             <div class="user-info-container landpgc">
                 <span>
-                    a
+                    <h1>Welcome to DashBoard</h1>
                 </span>
             </div>
         </div>
